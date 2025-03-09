@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cube</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #pauseButton {
+            position: relative;
+            padding: 5px 10px;
+            font-size: 15px;
+            cursor: pointer;
+            background-color: #322558;
+            color: white;
+            border: none;
+            border-radius: 5px; 
+        }
+
+        #pauseButton:hover {
+            background-color: #351346;
+        }
+
+        #song {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            padding: 30px 20px;
+            background-color: #250c41b7;
+            font-size: 18px;
+            font-weight: bold;
+            color: #e4d8d8;
+            border: none;
+            border-radius: 45px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+        }
+
+        #vinil {
+            width: 50px; /* Ширина на изображението */
+            height: 50px; /* Височина на изображението */
+            object-fit: cover; /* За запазване на пропорциите */
+            border-radius: 50%; /* Кръгла форма */
+            margin-right: 10px; /* Разстояние между изображението и текста */
+        }
+
+        #controls {
+            position: absolute;
+            top:30%;
+            left: 10px;
+            padding: 10px 30px;
+            background-color: #3a1565af;
+            font-size: 18px;
+            font-weight: bold;
+            color: #e4d8d8;
+            border:#e4d8d8;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="song">
+        <img id="vinil" src="vinil.gif">
+        <p>Song: Michael Jackson - Billie Jean</p>
+        <button id="pauseButton"></button>
+    </div>
+    <div id="controls">
+        <p>A, S, D + ArrowUp/ArrowDown: Columns</p>
+        <p>Z, X, C + ArrowLeft/ArrowRight: Rows</p>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
+
+
